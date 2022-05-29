@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Foodie</title>
+        <link rel="stylesheet" href="stylefoodie.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <img src="cake.jpg">
+                </div>
+               
+                    <div class="nav-links" id="nav-links">
+                        <i class="fa fa-close" onclick="closeMenu()"></i>
+                        <ul>
+                            <a href="a"><li>HOME</li></a>
+                            <a href="a"><li>ABOUT</li></a>
+                            <a href="a"><li>RECIPE</li></a>
+                        </ul>
+                        <button type="button" class="btn">SIGN UP</button>
+                    </div>
+                    <i class="fa-fa-bars" onclick="showMenu()"></i>
+                </div>
+                <div class="banner-title">
+                    <h1>Food<span> dosen't have <br>a religion.</span> It is a religion</h1>
+                    <button type="button" class="btn">EXPLORE</button>
+                </div>
+                <div class="vertical-bar">
+                    <div class="search-icon">
+                        <i class="fa fa-th-list"></i>
+                        <i class="fa fa-search" ></i>
+                    </div>
+                    <div class="social-icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pintErest"></i>
+                    </div>
+                </div>
+                <div class="notifications">
+                    <div class="contents">
+                        <small>If You Once Come Here..You Will Want To Come Again Here..</small>
+                        <p><a href="">PREV</a><a href="">NEXT</a></p>
+                    </div>
+                    <div class="notification-img">
+                        <img src="food2.jpg">
+                    </div>
+                </div>
+        </div>
+        <script>
+            var show = document.getElementById("nav-links")
+            function showMenu(){
+            show.style.right =  "0";
+            }
+            function closeMenu(){
+            show.style.right =  "-200px";
+            }
+        </script>
+
+
+    </body>
+</html>
